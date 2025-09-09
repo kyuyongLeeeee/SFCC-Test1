@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>공통 UI 가이드 - Fair Liar</title>
+        <link rel="stylesheet" href="../../assets/css/common.min.css">
+
+        <!-- SCRIPT IMPORT -->
+         <script src="../../assets/js/import/import.js"></script>
+
+        
+
+
+
+        <script src="../../assets/js/ui.common.js" charset="utf-8"></script>
+    </head>
+
+<body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="/status/assets/logo.svg" width="120" alt="Fair Liar"></a>
+            </h1>
+            
+            <nav id="nav">
+                <ul>
+                    <li ><a href="../../index.html">IA List</a></li>
+                    <li class="on"><a href="wsg.html">웹스타일가이드</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <ul class="guideSubmenu">
+            <li><a href="./wsg.html" >Color</a></li>
+            <li><a href="./typography.html" >Typography</a></li>
+            <li><a href="./icon.html" >Icon &amp; Chips &amp; Tag</a></li>
+            <li><a href="./button.html" >Button</a></li>
+            <li><a href="./form.html" >Form</a></li>
+            <li><a href="./accordian.html"  >아코디언</a></li>
+            <li><a href="./table.html" >Table</a></li>
+            <li><a href="./list.html" >List</a></li>
+            <li><a href="./ui.html" class="guideOn">COMMON UI</a></li>
+            <li><a href="./layerpopup.html" >Popup</a></li>
+            <!-- <li><a href="./unit.html" >유닛</a></li> -->
+            <!-- <li><a href="./slider.html" >슬라이더</a></li> -->
+        </ul>
+
+        <div class="guideContainer">
+
+            <section class="sample">
+                <h2 class="sampleTitle">01. Pagination</h2>
+                <div class="sampleContent">
+
+                    <p>pc, mobile, 해상도 변경시 mobile 확인 가능</p>
+
+                    <!-- desktop -->
+                    <div class="pagination_wrap">
+                        <button type="button" class="arrow first"><span class="icon_arrow_double"></span></button>
+                        <button type="button" class="arrow prev "><span class="icon_arrow_right"></span></button>
+                        <div class="pages">
+                            <a href="#" class="num on">1</a>
+                            <a href="#" class="num">2</a>
+                            <a href="#" class="num">3</a>
+                            <a href="#" class="num">4</a>
+                            <a href="#" class="num">5</a>
+                            <a href="#" class="num">6</a>
+                            <a href="#" class="num">7</a>
+                            <a href="#" class="num">8</a>
+                            <a href="#" class="num">9</a>
+                            <a href="#" class="num">10</a>
+                        </div>
+                        <button type="button" class="arrow next"><span class="icon_arrow_right"></span></button>
+                        <button type="button" class="arrow last"><span class="icon_arrow_double"></span></button>
+                    </div><!-- pagination -->
+                    <!-- //desktop -->
+
+                    <!-- mobile -->
+                    <div class="btn_wrap mo_show w200">
+                        <button type="button" class="btn_secondary"><span class="text">더보기</span><span class="icon_arrow_bottom"></span></button>
+                    </div>
+                    <!-- //mobile -->
+
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">02. Purchase Process</h2>
+                <div class="sampleContent" style="background-color: #e9e9e963;">
+                    
+                    <ul class="breadcrumb_box">
+                        <!-- 활성화 후 prev -->
+                        <li class="prev">
+                            <div class="box">
+                                <div><span class="icon_paper"></span></div>
+                                <span>약관동의</span>
+                            </div>
+                            <span class="icon_bread_arrow"></span>
+                        </li>
+
+                        <!-- 활성화시 active -->
+                        <li class="active">
+                            <div class="box">
+                                <div><span class="icon_user"></span></div>
+                                <span>본인인증</span>
+                            </div>
+                            <span class="icon_bread_arrow"></span>
+                        </li>
+
+                        <li>
+                            <div class="box">
+                                <div><span class="icon_receipt"></span></div>
+                                <span>회원정보 입력</span>
+                            </div>
+                            <span class="icon_bread_arrow"></span>
+                        </li>
+
+                        <li>
+                            <div class="box">
+                                <div><span class="icon_complete"></span></div>
+                                <span>가입완료</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <br/><br/><br/>
+
+                    <ul class="breadcrumb_box">
+                        
+                        <!-- 활성화 후 prev -->
+                        <li class="prev">
+                            <div class="box">
+                                <div><span class="icon_shop"></span></div>
+                                <span>장바구니</span>
+                            </div>
+                            <span class="icon_bread_arrow"></span>
+                        </li>
+
+                        <!-- 활성화시 active -->
+                        <li class="active">
+                            <div class="box">
+                                <div><span class="icon_store"></span></div>
+                                <span>주문결제</span>
+                            </div>
+                            <span class="icon_bread_arrow"></span>
+                        </li>
+
+                        <li>
+                            <div class="box">
+                                <div><span class="icon_receipt"></span></div>
+                                <span>주문완료</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <br/><br/><br/>
+
+                    <ol class="breadcrumb_box stage">
+                        <li>
+                            <div class="stage_box">
+                                <div><span class="icon_oder"></span></div>
+                                <span>입금대기</span>
+                                <em>0</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stage_box">
+                                <div><span class="icon_oder_payment"></span></div>
+                                <span>결제완료</span>
+                                <em class="text_point">1</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stage_box">
+                                <div><span class="icon_oder_ready"></span></div>
+                                <span>상품준비중</span>
+                                <em>0</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stage_box">
+                                <div><span class="icon_oder_shipp"></span></div>
+                                <span>배송중</span>
+                                <em>0</em>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="stage_box">
+                                <div><span class="icon_oder_compl"></span></div>
+                                <span>배송완료</span>
+                                <em class="text_point">1</em>
+                            </div>
+                        </li>
+                    </ol>
+
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">03. Tab</h2>
+                <div class="sampleContent">
+
+                    <div class="tab_wrap">
+                        <div class="tab-ctrl">
+                            <ul>
+                                <li><a href="#tab1" class="on">tab1</a></li><!-- 탭 활성화 시 on 클래스 추가 -->
+                                <li><a href="#tab2">tab2</a></li>
+                                <li><a href="#tab3">tab3</a></li>
+                            </ul>
+                        </div>
+                
+                        <div class="tab-contents-wrap">
+                            <div id="tab1" class="tab-content on">
+                                tab1 컨텐츠가 들어갑니다.
+                            </div>
+            
+                            <div id="tab2" class="tab-content">
+                                tab2 컨텐츠가 들어갑니다.
+                            </div>
+            
+                            <div id="tab3" class="tab-content">
+                                tab3 컨텐츠가 들어갑니다.
+                            </div>
+                        </div><!-- //.tab-contents-wrap -->
+                        
+                    </div><!-- //.tab_wrap -->
+
+                    <br /><br /><br />
+                    <p>.type2 형태의 너비가 100%시 .full</p>
+
+                    <div class="tab_wrap">
+                        <div class="tab-ctrl type2 full">
+                            <ul>
+                                <li><a href="#tab2-1" class="on">tab1</a></li><!-- 탭 활성화 시 on 클래스 추가 -->
+                                <li><a href="#tab2-2">tab2 
+                                    <span class="tab_tit_num mo_show">(<em class="text_point">5</em>)</span><!-- 모바일 숫자있을시 -->
+                                </a></li>
+                            </ul>
+                            <span class="mo_show icon_arrow"></span><!-- 모바일 탭메뉴 4개 초과시 노출 -->
+                        </div>
+                
+                        <div class="tab-contents-wrap">
+                            <div id="tab2-1" class="tab-content on">
+                                tab1 컨텐츠가 들어갑니다.
+                            </div>
+            
+                            <div id="tab2-2" class="tab-content">
+                                tab2 컨텐츠가 들어갑니다.
+                            </div>
+                        </div><!-- //.tab-contents-wrap -->
+                        
+                    </div><!-- //.tab_wrap -->
+
+                    <br /><br /><br />
+                    <p>.type2</p>
+
+                    <div class="tab_wrap">
+                        <div class="tab-ctrl type2">
+                            <ul>
+                                <li><a href="#tab2-1" class="on">tab1</a></li><!-- 탭 활성화 시 on 클래스 추가 -->
+                                <li><a href="#tab2-2">tab2
+                                    <span class="tab_tit_num mo_show">(<em class="text_point">5</em>)</span><!-- 모바일 숫자있을시 -->
+                                </a></li>
+                            </ul>
+                            <span class="mo_show icon_arrow"></span><!-- 모바일 탭메뉴 4개 초과시 노출 -->
+                        </div>
+                
+                        <div class="tab-contents-wrap">
+                            <div id="tab2-1" class="tab-content on">
+                                tab1 컨텐츠가 들어갑니다.
+                            </div>
+            
+                            <div id="tab2-2" class="tab-content">
+                                tab2 컨텐츠가 들어갑니다.
+                            </div>
+                        </div><!-- //.tab-contents-wrap -->
+                        
+                    </div><!-- //.tab_wrap -->
+
+                    <br /><br /><br />
+
+                    <p>.type3 아이콘 스타일</p>
+
+                    <div class="tab_wrap">
+                        <div class="tab-ctrl type3">
+                            <ul>
+                                <li><a href="#tab3-2" class="on left"><span class="icon_list_thumb"></span></a></li><!-- 탭 활성화 시 on 클래스 추가 -->
+                                <li><a href="#tab3-2" class="right"><span class="icon_list_list"></span></a></li>
+                            </ul>
+                        </div>
+                
+                        <div class="tab-contents-wrap">
+                            <div id="tab3-1" class="tab-content on">
+                                썸네일 리스트
+                            </div>
+            
+                            <div id="tab3-2" class="tab-content">
+                                일반 리스트
+                            </div>
+                        </div><!-- //.tab-contents-wrap -->
+                        
+                    </div><!-- //.tab_wrap -->
+
+                    <br /><br /><br />
+                    <p>.type4</p>
+
+                    <div class="tab_wrap">
+                        <div class="tab-ctrl type4">
+                            <ul>
+                                <li><a href="#tab2-1" class="on">tab1</a></li><!-- 탭 활성화 시 on 클래스 추가 -->
+                                <li><a href="#tab2-2">tab2</a></li>
+                            </ul>
+                        </div>
+                
+                        <div class="tab-contents-wrap">
+                            <div id="tab2-1" class="tab-content on">
+                                tab1 컨텐츠가 들어갑니다.
+                            </div>
+            
+                            <div id="tab2-2" class="tab-content">
+                                tab2 컨텐츠가 들어갑니다.
+                            </div>
+                        </div><!-- //.tab-contents-wrap -->
+                        
+                    </div><!-- //.tab_wrap -->
+
+                    <br /><br /><br />
+                    <p>.type5</p>
+
+                    <div class="tab_wrap">
+                        <div class="tab-ctrl type5">
+                            <ul>
+                                <li><a href="#tab1" class="on">주문내역 조회 (<em class="text_point">3</em>)</a></li><!-- 탭 활성화 시 on 클래스 추가 -->
+                                <li><a href="#tab2">취소/반품/교환 내역(<em class="text_point">0</em>)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents-wrap">
+                            <div id="tab1" class="tab-content on">
+                                tab1 컨텐츠가 들어갑니다.
+                            </div>
+
+                            <div id="tab2" class="tab-content">
+                                tab2 컨텐츠가 들어갑니다.
+                            </div>
+                        </div><!-- //.tab-contents-wrap -->
+                    </div>
+
+                    <br /><br /><br />
+                    <p>.type6</p>
+
+                    <div class="tab_wrap">
+                        <div class="tab-ctrl type6">
+                            <ul>
+                                <li><a href="#tab1" class="on"><span class="icon_change"></span> 교환</a><!-- 탭 활성화 시 on 클래스 추가 -->
+                                <li><a href="#tab2"><span class="icon_retrun"></span> 반품</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents-wrap">
+                            <div id="tab1" class="tab-content on">
+                                tab1 컨텐츠가 들어갑니다.
+                            </div>
+
+                            <div id="tab2" class="tab-content">
+                                tab2 컨텐츠가 들어갑니다.
+                            </div>
+                        </div><!-- //.tab-contents-wrap -->
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">04. 마이페이지</h2>
+                <div class="sampleContent">
+                    <ul class="mypage_info">
+                        <li>
+                            <dl>
+                                <dt><span class="icon_user_rating"></span> 회원 등급</dt>
+                                <dd class="pc_show">고객님은 <strong>일반회원</strong> 입니다.</dd>
+                                <dd class="mo_show"><strong>일반회원</strong></dd>
+                            </dl>
+                        </li>
+
+                        <li>
+                            <dl>
+                                <dt><span class="icon_coupon"></span> 쿠폰</dt>
+                                <dd><strong>1</strong>장</dd>
+                            </dl>
+                        </li>
+
+                        <li>
+                            <dl>
+                                <dt><span class="icon_buy"></span>총 주문</dt>
+                                <dd><strong>2,063</strong>원 (<em>0</em>회)</dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                    <br><br><br>
+
+                    <ul class="mypage_info">
+
+                        <li>
+                            <dl>
+                                <dt><span class="icon_coin"></span> 누적 예치금</dt>
+                                <dd><strong>1,000,000</strong>원</dd>
+                            </dl>
+                        </li>
+                        
+                        <li>
+                            <dl>
+                                <dt><span class="icon_grade-gold"></span> 사용가능 예치금</dt>
+                                <dd><strong>600,000</strong>원</dd>
+                            </dl>
+                        </li>
+
+                        <li>
+                            <dl>
+                                <dt><span class="icon_receipt bk"></span> 사용된 예치금</dt>
+                                <dd><strong>0</strong>원</dd>
+                            </dl>
+                        </li>
+
+                        <li>
+                            <dl>
+                                <dt><span class="icon_refund"></span>현금 환불요청 예치금</dt>
+                                <dd><strong>0</strong>원</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">05. 리뷰 별점</h2>
+                <div class="sampleContent">
+
+                    <p>작성</p>
+
+                    <div class="review_box">
+                        <div class="rating" aria-label="평점">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5" title="5점"></label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" title="4점"></label>
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" title="3점"></label>
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" title="2점"></label>
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" title="1점"></label>
+                        </div>
+                    </div>
+
+                    <br/><br/><br/>
+
+                    <p>뷰</p>
+                    
+                    <div class="review_box">
+                        <!-- 1점 .one, 2점 .two, 3점 .thr, 4점 .four, 5점 .five   -->
+                        <div class="score four"><span class="hidden">4점</span></div>
+                    </div>
+                    
+
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT IMPORT 
+     <script src="../../assets/js/import/import.js"></script>
+
+    
+
+
+ -->
+
+</body>
+
+</html>

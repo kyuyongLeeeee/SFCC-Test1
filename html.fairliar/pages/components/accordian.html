@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>아코디언 - Fair Liar</title>
+        <link rel="stylesheet" href="../../assets/css/common.min.css">
+
+        <!-- SCRIPT IMPORT -->
+         <script src="../../assets/js/import/import.js"></script>
+
+        
+
+
+
+        <script src="../../assets/js/ui.common.js" charset="utf-8"></script>
+    </head>
+    <body>
+    <div id="wsg-wrap" class="wsg">
+
+        <header class="wsg-header">
+            <h1>
+                <a href="javascript:void(0);"><img src="/status/assets/logo.svg" width="120" alt="Fair Liar"></a>
+            </h1>
+            
+            <nav id="nav">
+                <ul>
+                    <li ><a href="../../index.html">IA List</a></li>
+                    <li class="on"><a href="wsg.html">웹스타일가이드</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <ul class="guideSubmenu">
+            <li><a href="./wsg.html" >Color</a></li>
+            <li><a href="./typography.html" >Typography</a></li>
+            <li><a href="./icon.html" >Icon &amp; Chips &amp; Tag</a></li>
+            <li><a href="./button.html" >Button</a></li>
+            <li><a href="./form.html" >Form</a></li>
+            <li><a href="./accordian.html"  class="guideOn">아코디언</a></li>
+            <li><a href="./table.html" >Table</a></li>
+            <li><a href="./list.html" >List</a></li>
+            <li><a href="./ui.html" >COMMON UI</a></li>
+            <li><a href="./layerpopup.html" >Popup</a></li>
+            <!-- <li><a href="./unit.html" >유닛</a></li> -->
+            <!-- <li><a href="./slider.html" >슬라이더</a></li> -->
+        </ul>
+        
+        <div class="guideContainer ">
+            <section class="sample">
+                <h2 class="sampleTitle">아코디언</h2>
+
+                <!-- 기본 -->
+                <h3>.accordian</h3>
+
+                <br><br>
+
+                <div class="accordian">
+                    <ul>
+                        <li>
+                            <button class="title acc-trigger">
+                                <span class="title">Lv.5 VIP</span>
+                            </button>
+                            <div class="acc-conts">
+                                <div class="inner">
+                                    <p>내용</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <button class="title acc-trigger">
+                                <span class="title">Lv.4 Gold</span>
+                            </button>
+                            <div class="acc-conts">
+                                <div class="inner">
+                                    <p>내용</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <button class="title acc-trigger">
+                                <span class="title">Lv.3 Silver</span>
+                            </button>
+                            <div class="acc-conts">
+                                <div class="inner">
+                                    <p>내용</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <button class="title acc-trigger">
+                                <span class="title">Lv.2 Bronze</span>
+                            </button>
+                            <div class="acc-conts">
+                                <div class="inner">
+                                    <p>내용</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <button class="title acc-trigger">
+                                <span class="title">Lv.1 Welcome</span>
+                            </button>
+                            <div class="acc-conts">
+                                <div class="inner">
+                                    <p>내용</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="description">
+                    <h3>MARKUP</h3>
+
+                    <p>아래와 같은 구조 사용 acc-trigger와 acc-conts가 같은 레벨에 있어야 함</p>
+                    <br>
+                    <div class="code">
+                        <pre>
+&lt;div class="accordian"&gt;
+    &lt;button class=&quot;acc-trigger&quot;&gt;&lt;/button&gt;<br>
+    &lt;div class=&quot;acc-conts&quot;&gt;
+        &lt;div class=&quot;inner&quot;&gt;
+            내용
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sample">
+                <h2 class="sampleTitle">아코디언 type-02</h2>
+
+                <div class="accordian type-02">
+                    <ul>
+                        <li>
+                            <button class="title acc-trigger"><!--활성화시 .active-->
+                                <span class="title">주문자 정보</span>
+                            </button>
+                            <div class="acc-conts"><!--활성화시 .on-->
+                                <div class="inner">
+                                   내용
+                                </div>
+                            </div>
+                        </li>
+        
+                        <li>
+                            <button class="title acc-trigger"><!--활성화시 .active-->
+                                <span class="title">주문 상품</span>
+                            </button>
+                            <div class="acc-conts"><!--활성화시 .on-->
+                                <div class="inner">
+                                   내용
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>    
+
+            <section class="sample">
+                <h2 class="sampleTitle">아코디언 type-03</h2>
+
+                <div class="accordian type-03">
+                    <ul>
+                        <li>
+                            <button class="title acc-trigger">
+                                <span class="title">✽ 예치금은 사용제한 없이 언제든 결제가 가능합니다.</span>
+                            </button>
+                            <div class="acc-conts">
+                                <div class="inner">
+                                    <p>예치금으로만 결제할 경우, 결제금액이 0으로 보여지는 것은 정상이며 [결제하기] 버튼을 누르면 주문이 완료됩니다.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="description">
+                    <h3>MARKUP</h3>
+
+                    <p>이중 아코디언일 경우 서브아코디언에 .sub_accordian 추가</p>
+                    <br>
+                    <div class="code">
+                        <pre>
+&lt;!-- 메인 아코디언 --&gt;
+&lt;div class="accordian type-02"&gt;
+    &lt;button class=&quot;acc-trigger&quot;&gt;&lt;/button&gt;<br>
+    &lt;div class=&quot;acc-conts&quot;&gt;
+        &lt;div class=&quot;inner&quot;&gt;
+
+            &lt;!-- 서브 아코디언 --&gt;
+            &lt;div class="accordian sub_accordian type-03"&gt;
+                &lt;button class=&quot;acc-trigger&quot;&gt;&lt;/button&gt;<br>
+                &lt;div class=&quot;acc-conts&quot;&gt;
+                    &lt;div class=&quot;inner&quot;&gt;
+                        내용
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;!-- //서브 아코디언 --&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- //메인 아코디언 --&gt;</pre>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT IMPORT 
+     <script src="../../assets/js/import/import.js"></script>
+
+    
+
+
+ -->
+    <script>
+         UI_COMMON.ACCORDION.init();
+    </script>
+</body>
+
+</html>

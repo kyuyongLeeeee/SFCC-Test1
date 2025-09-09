@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=960" />
+    <title>I.A. 목록 - Fair Liar</title>
+    <link rel="stylesheet" href="./assets/wsg.css" />
+    <script type="text/javascript" src="./assets/jquery-1.6.4.min.js"></script>
+    <script src="./assets/markup.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- container -->
+        <div class="wsg-container">
+            <header class="wsg-header">
+                <h1>
+                    <a href="javascript:void(0);"><img src="./assets/logo.svg" width="150" alt="Fair Liar"></a>
+                </h1>
+                <nav id="nav">
+                    <ul>
+                        <li class="on"><a href="../index.html">IA List</a></li>
+                        <li class=""><a href="../pages/components/wsg.html">웹스타일가이드</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- contentPrimary -->
+            <section id="contentPrimary" class="content-primary">
+
+                <h2>#진행률</h2>
+                <!-- 대쉬보드 -->
+                <section class="progress-board">
+                    <!-- <div class="progress">
+                        <a href="javascript:void(0);">
+                            <div class="title">total</div>
+                            <div class="stat">
+                                <strong class="percent">30%</strong>
+                                <span class="count">
+                                    <span class="current">3</span>
+                                    <span class="slash">/</span>
+                                    <span class="total">10</span>
+                                </span>
+                            </div>
+                        </a>
+                    </div> -->
+                </section>
+                <!-- // 대쉬보드 -->
+
+                <!-- 마크업리스트 -->
+                <!-- 상태 클래스
+                    * 대기 : hold
+                    * 진행 : working
+                    * 완료 : complete
+                    * 수정 : modify
+                    * 삭제 : delete
+                    -->
+                <div class="progress-state">
+                    <p><strong>진행상황 표기</strong></p>
+                    <ul class="statebox">
+                        <li>.hold : <span class="state hold">대기</span></li>
+                        <li>.working : <span class="state working">진행</span></li>
+                        <li>.complete : <span class="state complete">완료</span></li>
+                        <li>.modify : <span class="state modify">수정</span></li>
+                        <li>.delete : <span class="state delete">삭제</span></li>
+                    </ul>
+                </div>
+
+                <!-- 레이아웃 -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#레이아웃</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">layout</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deSample/layout_deSample.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">검색 결과</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deSearchResult/layout_deSearchResult.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //레이아웃 -->
+
+                <!-- MAIN -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#메인</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deMain/layout_deMain.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">카테고리</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deCategory/layout_deCategory.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">프로모션</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/dePromotion/layout_dePromotion.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <td class="tbl-no">1</td>
+                            <td class="tbl-dep">메인 팝업(modal)</td>
+                            <td class="tbl-dep"></td>
+                            <td class="tbl-dep"></td>
+                            <td class="tbl-dep"></td>
+                            <td class="url"><a href="#">../pages/deMainPopup/layout_deMainPopup.html</a></td>
+                            <td class="name"></td>
+                            <td class="state complete">완료</td>
+                            <td class="history">
+                                <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //MAIN -->
+
+                <!-- 회원 -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#회원</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no"></td>
+                                <td class="tbl-dep">로그인</td>
+                                <td class="tbl-dep">카카오 1초 로그인 / 회원가입 (↗)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#"></a></td>
+                                <td class="name"></td>
+                                <td class="state end">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">기존 회원 로그인 | 비회원 주문조회 (tab)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deLogin/layout_deLogin.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no"></td>
+                                <td class="tbl-dep">아이디 찾기(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deForgotID/layout_deForgotID.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no"></td>
+                                <td class="tbl-dep">비밀번호 찾기(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deForgotPassword/layout_deForgotPassword.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no"></td>
+                                <td class="tbl-dep">회원가입</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deJoin/layout_deJoin.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">ID/PW 입력이 필요한 회원가입</td>
+                                <td class="tbl-dep">step1. 약관동의</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deJoinStep1/layout_deJoinStep1.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">step2. 회원정보 입력</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deJoinStep2/layout_deJoinStep2.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">가입완료</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deJoinCompleted/layout_deJoinCompleted.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //회원 -->
+
+                <!-- 상품 -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#상품</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">착용 제품 모아보기</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deAllProd/layout_deAllProd.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>                            
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deProductList/layout_deProductList.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">옵션 선택(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deProductOption/layout_deProductOption.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">상세</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deProductDetail/layout_deProductDetail.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">재입고 알림 신청(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deProductNoti/layout_deProductNoti.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">매장 재고 위치(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deProductNoti/layout_deProductLocation.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">관심상품 추가(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deProductNoti/layout_deProductWish.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //상품 -->
+
+                <!-- 장바구니 -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#장바구니</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">step1. 장바구니</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deCart/layout_deCart.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">step2. 주문결제(회원)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/dePaymentMem/layout_dePaymentMem.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">step2. 주문결제(비회원)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/dePaymentNonMem/layout_dePaymentNonMem.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">배송 주소록 등록(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deShippingAdd/layout_deShippingAdd.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">배송지 목록(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deShippingModify/layout_deShippingModify.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">step3. 주문완료</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/dePaymentCompleted/layout_dePaymentCompleted.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //장바구니 -->
+
+                <!-- BRAND STORY -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#BRAND STORY</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">ABOUT US</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deAboutUs/layout_deAboutUs.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">REVIEW</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deReview/layout_deReview.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">EVENT</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deEvent/layout_deEvent.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">상세</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deEventDetail/layout_deEventDetail.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">NOTICE</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deNotice/layout_deNotice.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">상세</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deNoticeDetail/layout_deNoticeDetail.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">VIP 멤버십 클래스</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deVip/layout_deVip.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">상세</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deVipDetail/layout_deVipDetail.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //BRAND STORY -->
+
+                <!-- LOOKBOOK -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#LOOKBOOK</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">이미지형 | 리스트형(tab)</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deLookBook/layout_deLookBook.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">상세</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deLookBookDetail/layout_deLookBookDetail.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //LOOKBOOK -->
+
+                <!-- STORES -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#STORES</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deStore/layout_deStore.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //STORES -->
+
+                <!-- 마이페이지 -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#마이페이지</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deMypage/layout_deMypage.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">나의 쇼핑 정보</td>
+                                <td class="tbl-dep">온라인/ 매장 주문내역 조회</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deOrderList/layout_deOrderList.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">주문내역 상세보기</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deOrderDetail/layout_deOrderDetail.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">입금전 취소<br>취소완료<br>반품완료<br>배송준비중</td>
+                                <td class="url"><a href="#">../pages/deOrderDetail/layout_deOrderDetail2.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">내역보기(modal)</td>
+                                <td class="url"><a href="#">../pages/deOrderTotal/layout_deOrderTotal.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">주문취소(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deOrderCancel/layout_deOrderCancel.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">교환/반품 신청(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deOrderExchangeReturn/layout_deOrderExchangeReturn.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">취소/반품/교환 내역</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#"></a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">취소/교환/반품 상세정보(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deOrderCancelDetail/layout_deOrderCancelDetail.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">예치금 내역</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deOrderDeposit/layout_deOrderDeposit.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">쿠폰 내역</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deCoupon/layout_deCoupon.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">배송 주소록 관리</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deShipping/layout_deShipping.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">배송정보 변경(modal)</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deShippingChange/layout_deShippingChange.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">활동 정보</td>
+                                <td class="tbl-dep">최근 본 상품</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deRecentlylist/layout_deRecentlylist.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">관심 상품</td>
+                                <td class="tbl-dep">리스트</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">나의 정보</td>
+                                <td class="tbl-dep">회원 정보 수정</td>
+                                <td class="tbl-dep">비밀번호 확인</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deMemberPassword/layout_deMemberPassword.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">수정</td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deMemberInfomation/layout_deMemberInfomation.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep">회원탈퇴(modal)</td>
+                                <td class="url"><a href="#">../pages/deMemberWithdrawal/layout_deMemberWithdrawal.html</a></td>
+                                <td class="name"></td>
+                                <td class="state complete">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //마이페이지 -->
+
+                <!-- 기타 -->
+                <section class="progress-list" data-type="pc">
+                    <h2>#기타</h2>
+                    <div class="utils">
+                        <div class="util-group">
+                            <a href="#" target="_blank" title="새 창으로 열기"></a>
+                        </div>
+                        <div class="util-group">
+                            <a class="go-top" href="#content">TOP</a>
+                        </div>
+                    </div>
+
+                    <table class="data-table wsg">
+                        <colgroup>
+                            <col style="width: 3%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 10.5%" />
+                            <col style="width: 20%" />
+                            <col style="width: 6%" />
+                            <col style="width: 6%" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="tbl-no">NO.</th>
+                                <th class="tbl-dep">depth 2</th>
+                                <th class="tbl-dep">depth 3</th>
+                                <th class="tbl-dep">depth 4</th>
+                                <th class="tbl-dep">depth 5</th>
+                                <th>URL</th>
+                                <th>담당자</th>
+                                <th>상태</th>
+                                <th>비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">이용약관</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deTerms/layout_deTerms.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">개인정보처리방침</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/dePrivacy/layout_dePrivacy.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">이용안내</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deGuide/layout_deGuide.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl-no">1</td>
+                                <td class="tbl-dep">회사소개</td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="tbl-dep"></td>
+                                <td class="url"><a href="#">../pages/deCompany/layout_deCompany.html</a></td>
+                                <td class="name"></td>
+                                <td class="state">완료</td>
+                                <td class="history">
+                                    <!-- 수정사항은 최신날짜가 위로 가도록 -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- //기타 -->
+
+                <!-- // 마크업리스트 -->
+                
+            </section>
+            <!-- //contentPrimary -->
+
+        </div>
+        <!-- //container -->
+    </div>
+</body>
+
+</html>

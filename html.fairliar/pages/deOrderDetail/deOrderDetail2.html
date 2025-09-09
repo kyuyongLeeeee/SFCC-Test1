@@ -1,0 +1,911 @@
+<link href="../../pages/deOrderDetail/deOrderDetail.css" rel="stylesheet">
+
+<div class="deOrderDetail column--grid"><!-- .column : 900px / .column--medium : 600px  / .column--min : 500px -->
+    <link href="../../pages/deLNBMypage/deLNBMypage.css" rel="stylesheet">
+
+    <div class="lnb">
+        <div class="heading--mid">마이 페이지</div>
+
+        <ul class="lnb_list">
+            <li>나의 쇼핑 정보
+                <ul>
+                    <li><a href="../../pages/deOrderList/layout_deOrderList.html" class="is-active">온라인 주문내역 조회</a></li>
+                    <li><a href="../../pages/deOrderList/layout_deOrderList.html" >매장 주문내역 조회</a></li>
+                    <li><a href="../../pages/deOrderDeposit/layout_deOrderDeposit.html" >예치금 내역</a></li>
+                    <li><a href="../../pages/deCoupon/layout_deCoupon.html" >쿠폰 내역</a></li>
+                    <li><a href="../../pages/deShipping/layout_deShipping.html" >배송 주소록 관리</a></li>
+                </ul>
+            </li>
+            <li>활동 정보
+                <ul>
+                    <li><a href="../../pages/deRecentlylist/layout_deRecentlylist.html" >최근 본 상품</a></li>
+                    <li><a href="../../pages/deWishlist/layout_deWishlist.html" >관심 상품</a></li>
+                </ul>
+            </li>
+            <li>나의 정보
+                <ul>
+                    <li><a href="../../pages/deMemberInfomation/layout_deMemberInfomation.html" >회원 정보 수정</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="../../pages/deLNBMypage/deLNBMypage.js"></script>
+
+    <div class="inner">
+   
+        <div class="heading_box pc_show"><!-- pc only -->
+            <h2 class="heading">@@title</h2>
+        </div>
+
+        <!-- 상품 리스트 -->
+        <div class="prod_header">
+            <div class="data">
+                <p class="date">2024-09-11 11:42</p>
+                <p class="num">주문번호. <strong>ORD20240911-0168148</strong></p>
+            </div>
+        </div>
+
+        <ul class="prod_list row">
+            <!--list 컨텐츠 반복-->
+            <li class="prod_item row">
+                <div class="inner">
+                    <div class="boxs">
+                        <div class="img_box">
+                            <img src="../../assets/images/product/product03.png" alt="브이넥 풀오버 베스트">
+                        </div>
+                    </div>
+
+                    <!--pc only-->
+                    <div class="txt_box pc_show">
+                        <div class="txts">
+                            <span class="num">FF3SW02FWH</span>
+                            <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                            <p class="options">
+                                <span>사이즈 S / 수량  1</span>
+                            </p>
+                        </div>
+
+                        <div class="result">
+                            <div class="price">
+                                <p><s>358,000원</s></p>
+                                <p>
+                                    <span class="discount">50%</span>
+                                    <span>179,000</span><em>&nbsp;원</em>
+                                </p>
+                                <span class="price_text">무료배송</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//pc only-->
+
+                    <!--mo only-->
+                    <div class="txt_box mo_show">
+                        <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                        <p class="options">
+                            <span>사이즈 S / 수량  1</span>
+                        </p>
+                        <div class="price">
+                            <p><s>358,000원</s></p>
+                            <p>
+                                <span class="discount">50%</span>
+                                <span>179,000원</span>
+                            </p>
+                            <span class="price_text">무료배송</span>
+                        </div>
+                    </div>
+                    <!--//mo only-->
+                </div>
+            </li>
+            <!--//list 컨텐츠 반복-->
+
+            <li class="prod_item row">
+                <div class="inner">
+                    <div class="boxs">
+                        <div class="img_box">
+                            <img src="../../assets/images/product/product03.png" alt="브이넥 풀오버 베스트">
+                        </div>
+                    </div>
+
+                    <!--pc only-->
+                    <div class="txt_box pc_show">
+                        <div class="txts">
+                            <span class="num">FF3SW02FWH</span>
+                            <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                            <p class="options">
+                                <span>사이즈 S / 수량  1</span>
+                            </p>
+                        </div>
+
+                        <div class="result">
+                            <div class="price">
+                                <p><s>358,000원</s></p>
+                                <p>
+                                    <span class="discount">50%</span>
+                                    <span>179,000</span><em>&nbsp;원</em>
+                                </p>
+                                <span class="price_text">기본배송</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//pc only-->
+
+                    <!--mo only-->
+                    <div class="txt_box mo_show">
+                        <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                        <p class="options">
+                            <span>사이즈 S / 수량  1</span>
+                        </p>
+                        <div class="price">
+                            <p><s>358,000원</s></p>
+                            <p>
+                                <span class="discount">50%</span>
+                                <span>179,000원</span>
+                            </p>
+                            <span class="price_text">기본배송</span>
+                        </div>
+                    </div>
+                    <!--//mo only-->
+                </div>
+            </li>
+        </ul>
+        <!-- //상품 리스트 -->
+
+        <!-- 주문내역 상세보기 -->
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title">주문 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>주문번호</dt>
+                        <dd>20250226-0000184</dd>
+
+                        <dt>주문일자</dt>
+                        <dd>2025-02-26 10:21:00</dd>
+
+                        <dt>주문자</dt>
+                        <dd>이혜진</dd>
+
+                        <dt>주문처리상태</dt>
+                        <dd>개별처리</dd>
+                    </dl>
+                </li>
+                
+                <li class="list">
+                    <p class="title">결제 정보</p>
+                    <ul class="ul_list">
+                        <li>
+                            <dl class="dl_list type2 brd_none">
+                                <dt>총 주문금액</dt>
+                                <dd>
+                                    <p class="total"><strong>0</strong> 원</p>
+                                    <button type="button" class="link">내역보기</button>
+                                </dd>
+                            </dl>
+                        </li>
+
+                        <!-- <li>
+                            <dl class="dl_list type2 brd_none">
+                                <dt>총 할인금액</dt>
+                                <dd><p class="total"><strong>89,000</strong> 원</p></dd>
+                            </dl>
+                        </li> -->
+
+                        <!-- <li>
+                            <dl class="dl_list type2 brd_none">
+                                <dt>추가 할인금액</dt>
+                                <dd>
+                                    <p>89,000 원</p>
+                                    <button type="button" class="link">내역보기</button>
+                                </dd>
+                            </dl>
+                        </li> -->
+
+                        <li>
+                            <dl class="dl_list type2 brd_none">
+                                <dt>총 결제금액</dt>
+                                <dd><p class="total"><strong>1,120,000</strong> 원</p></dd>
+                            </dl>
+                        </li>
+
+                        <li>
+                            <dl class="dl_list type2 brd_none">
+                                <dt>결제수단</dt>
+                                <dd class="method">무통장입금</dd>
+        
+                                <dt>계좌번호</dt>
+                                <dd class="account_box">기업은행 216-119175-01-037<br class="mo_show">(주)씨에프디에이</dd>
+        
+                                <dt>입금자</dt>
+                                <dd>이혜진</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- //주문내역 상세보기 -->
+
+        <!-- 입금전 취소 -->
+        <div class="heading_box">
+            <h3 class="heading">입금전 취소</h3>
+        </div>
+
+        <ul class="prod_list row">
+            <!--list 컨텐츠 반복-->
+            <li class="prod_item row">
+                <div class="inner">
+                    <div class="boxs">
+                        <div class="img_box">
+                            <img src="../../assets/images/product/product03.png" alt="브이넥 풀오버 베스트">
+                        </div>
+                    </div>
+
+                    <!--pc only-->
+                    <div class="txt_box pc_show">
+                        <div class="txts">
+                            <span class="num">FF3SW02FWH</span>
+                            <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                            <p class="options">
+                                <span>사이즈 S / 수량  1</span>
+                            </p>
+                        </div>
+
+                        <div class="result">
+                            <div class="price">
+                                <p><s>358,000원</s></p>
+                                <p>
+                                    <span class="discount">50%</span>
+                                    <span>179,000</span><em>&nbsp;원</em>
+                                </p>
+                                <span class="price_text">무료배송</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//pc only-->
+
+                    <!--mo only-->
+                    <div class="txt_box mo_show">
+                        <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                        <p class="options">
+                            <span>사이즈 S / 수량  1</span>
+                        </p>
+                        <div class="price">
+                            <p><s>358,000원</s></p>
+                            <p>
+                                <span class="discount">50%</span>
+                                <span>179,000원</span>
+                            </p>
+                            <span class="price_text">무료배송</span>
+                        </div>
+                    </div>
+                    <!--//mo only-->
+
+                    <div class="btn_wrap btns">
+                        <span class="message_text">입금전 취소</span>
+                    </div>
+
+                </div>
+            </li>
+            <!--//list 컨텐츠 반복-->
+        </ul>
+
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title2">[기본배송]</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>상품구매금액</dt>
+                        <dd>0 원</dd>
+
+                        <dt>배송비</dt>
+                        <dd>0 원</dd>
+
+                        <dt>지역별배송비</dt>
+                        <dd>0 원</dd>
+
+                        <dt>합계</dt>
+                        <dd><strong>0</strong> 원</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title">최종 결제 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>총 결제금액</dt>
+                        <dd><strong>0</strong> 원</dd>
+
+                        <dt>상품구매금액</dt>
+                        <dd>0 원</dd>
+
+                        <dt>배송비</dt>
+                        <dd>0 원</dd>
+
+                        <dt>결제예정금액</dt>
+                        <dd>0 원</dd>
+                    </dl>
+                </li>
+                <li class="list">
+                    <p class="title">배송 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>받으시는 분</dt>
+                        <dd class="name_box">
+                            <span class="name">이혜진</span>
+                            <span class="number">010-8290-7002</span>
+                        </dd>
+
+                        <dt>주소</dt>
+                        <dd class="address_box">
+                            <p class="address">(08788) 서울특별시 관악구 남부순환로 226길 9 (봉천동) 본사 </p>
+                            <p class="number">010-8290-7002</p>
+                        </dd>
+
+                        <dt>배송메시지</dt>
+                        <dd class="message">부재시 현관문 앞에 놔주세요.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!-- //입금전 취소 -->
+
+        <!-- 취소완료 -->
+        <div class="heading_box">
+            <h3 class="heading">취소완료(총2건)</h3>
+        </div>
+
+        <ul class="prod_list row">
+            <!--list 컨텐츠 반복-->
+            <li class="prod_item row">
+                <div class="inner">
+                    <div class="boxs">
+                        <div class="img_box">
+                            <img src="../../assets/images/product/product03.png" alt="브이넥 풀오버 베스트">
+                        </div>
+                    </div>
+
+                    <!--pc only-->
+                    <div class="txt_box pc_show">
+                        <div class="txts">
+                            <span class="num">FF3SW02FWH</span>
+                            <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                            <p class="options">
+                                <span>사이즈 S / 수량  1</span>
+                            </p>
+                        </div>
+
+                        <div class="result">
+                            <div class="price">
+                                <p><s>358,000원</s></p>
+                                <p>
+                                    <span class="discount">50%</span>
+                                    <span>179,000</span><em>&nbsp;원</em>
+                                </p>
+                                <span class="price_text">무료배송</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//pc only-->
+
+                    <!--mo only-->
+                    <div class="txt_box mo_show">
+                        <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                        <p class="options">
+                            <span>사이즈 S / 수량  1</span>
+                        </p>
+                        <div class="price">
+                            <p><s>358,000원</s></p>
+                            <p>
+                                <span class="discount">50%</span>
+                                <span>179,000원</span>
+                            </p>
+                            <span class="price_text">무료배송</span>
+                        </div>
+                    </div>
+                    <!--//mo only-->
+
+                    <div class="btn_wrap btns">
+                        <span class="message_text">취소완료</span>
+                    </div>
+
+                </div>
+            </li>
+            <!--//list 컨텐츠 반복-->
+
+            <li class="prod_item row">
+                <div class="inner">
+                    <div class="boxs">
+                        <div class="img_box">
+                            <img src="../../assets/images/product/product03.png" alt="브이넥 풀오버 베스트">
+                        </div>
+                    </div>
+
+                    <!--pc only-->
+                    <div class="txt_box pc_show">
+                        <div class="txts">
+                            <span class="num">FF3SW02FWH</span>
+                            <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                            <p class="options">
+                                <span>사이즈 S / 수량  1</span>
+                            </p>
+                        </div>
+
+                        <div class="result">
+                            <div class="price">
+                                <p><s>358,000원</s></p>
+                                <p>
+                                    <span class="discount">50%</span>
+                                    <span>179,000</span><em>&nbsp;원</em>
+                                </p>
+                                <span class="price_text">무료배송</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//pc only-->
+
+                    <!--mo only-->
+                    <div class="txt_box mo_show">
+                        <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                        <p class="options">
+                            <span>사이즈 S / 수량  1</span>
+                        </p>
+                        <div class="price">
+                            <p><s>358,000원</s></p>
+                            <p>
+                                <span class="discount">50%</span>
+                                <span>179,000원</span>
+                            </p>
+                            <span class="price_text">무료배송</span>
+                        </div>
+                    </div>
+                    <!--//mo only-->
+
+                    <div class="btn_wrap btns">
+                        <span class="message_text">취소완료</span>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title2">[기본배송]</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>상품구매금액</dt>
+                        <dd>41,800 원</dd>
+
+                        <dt>배송비</dt>
+                        <dd>3000 원</dd>
+
+                        <dt>지역별배송비</dt>
+                        <dd>0 원</dd>
+
+                        <dt>합계</dt>
+                        <dd><strong>44,800</strong> 원</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title">최종 결제 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>총 결제금액</dt>
+                        <dd><strong>338,000</strong> 원</dd>
+
+                        <dt>상품구매금액</dt>
+                        <dd>-1,000 원</dd>
+
+                        <dt>배송비</dt>
+                        <dd>20 P</dd>
+
+                        <dt>결제예정금액</dt>
+                        <dd>0 원</dd>
+                    </dl>
+                </li>
+
+                <li class="list">
+                    <p class="title">환불 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>대상 <br class="mo_show">(총 2건)</dt>
+                        <dd>
+                            <p>레이스 리본 탈착 민소매 니트(화이트), 화이트/S, 1</p>
+                            <p>레이스 리본 탈착 민소매 니트(화이트), 화이트/S, 1</p>
+                        </dd>
+
+                        <dt>환불일자 (처리상태)</dt>
+                        <dd>
+                            <span>2025-02-26 12:29:58</span><br class="mo_show">
+                            <strong>(환불완료)</strong>
+                        </dd>
+
+                        <dt>환불금액</dt>
+                        <dd><strong>338,000</strong> 원</dd>
+
+                        <dt>환불수단</dt>
+                        <dd>현금</dd>
+
+                        <dt>환불계좌</dt>
+                        <dd>기업은행 216-119175-01-037 </dd>
+
+                        <dt>예금주</dt>
+                        <dd>이혜진</dd>
+                    </dl>
+                </li>
+
+                <li class="list">
+                    <p class="title">배송 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>받으시는 분</dt>
+                        <dd class="name_box">
+                            <span class="name">이혜진</span>
+                            <span class="number">010-8290-7002</span>
+                        </dd>
+
+                        <dt>주소</dt>
+                        <dd class="address_box">
+                            <p class="address">(08788) 서울특별시 관악구 남부순환로 226길 9 (봉천동) 본사 </p>
+                            <p class="number">010-8290-7002</p>
+                        </dd>
+
+                        <dt>배송메시지</dt>
+                        <dd class="message">부재시 현관문 앞에 놔주세요.</dd>
+                    </dl>
+                </li>
+
+                <li class="list">
+                    <p class="title">수거신청 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt class="collect">대상</dt>
+                        <dd>
+                            <p>레이스 리본 탈착 민소매 니트(화이트), 화이트/S, 1</p>
+                            <p>레이스 리본 탈착 민소매 니트(화이트), 화이트/S, 1</p>
+                        </dd>
+
+                        <dt class="collect"><span class="pc_show">수거신청 여부</span><span class="mo_show">내용</span></dt>
+                        <dd>
+                            <span>수거신청 (배송지와 동일)</span>
+                        </dd>
+
+                        <dt>수거지 주소</dt>
+                        <dd>
+                            <div class="name_box">
+                                <span class="name">이혜진</span>
+                                <span class="number">010-8290-7002</span>
+                            </div>
+                            <div class="address_box">
+                                <p class="address">(08788) 서울특별시 관악구 남부순환로 226길 9 (봉천동) 본사 </p>
+                                <p class="number">010-8290-7002</p>
+                            </div>
+                        </dd>
+
+                        <!-- <dt>배송메시지</dt>
+                        <dd class="message">부재시 현관문 앞에 놔주세요.</dd> -->
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!-- //취소완료 -->
+
+        <!-- 반품완료 -->
+        <div class="heading_box">
+            <h3 class="heading">반품완료</h3>
+        </div>
+
+        <ul class="prod_list row">
+            <!--list 컨텐츠 반복-->
+            <li class="prod_item row">
+                <div class="inner">
+                    <div class="boxs">
+                        <div class="img_box">
+                            <img src="../../assets/images/product/product03.png" alt="브이넥 풀오버 베스트">
+                        </div>
+                    </div>
+
+                    <!--pc only-->
+                    <div class="txt_box pc_show">
+                        <div class="txts">
+                            <span class="num">FF3SW02FWH</span>
+                            <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                            <p class="options">
+                                <span>사이즈 S / 수량  1</span>
+                            </p>
+                        </div>
+
+                        <div class="result">
+                            <div class="price">
+                                <p><s>358,000원</s></p>
+                                <p>
+                                    <span class="discount">50%</span>
+                                    <span>179,000</span><em>&nbsp;원</em>
+                                </p>
+                                <span class="price_text">무료배송</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//pc only-->
+
+                    <!--mo only-->
+                    <div class="txt_box mo_show">
+                        <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                        <p class="options">
+                            <span>사이즈 S / 수량  1</span>
+                        </p>
+                        <div class="price">
+                            <p><s>358,000원</s></p>
+                            <p>
+                                <span class="discount">50%</span>
+                                <span>179,000원</span>
+                            </p>
+                            <span class="price_text">무료배송</span>
+                        </div>
+                    </div>
+                    <!--//mo only-->
+
+                    <div class="btn_wrap btns">
+                        <span class="message_text">반품완료</span>
+                    </div>
+
+                </div>
+            </li>
+            <!--//list 컨텐츠 반복-->
+        </ul>
+
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title2">[기본배송]</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>상품구매금액</dt>
+                        <dd>0 원</dd>
+
+                        <dt>배송비</dt>
+                        <dd>0 원</dd>
+
+                        <dt>지역별배송비</dt>
+                        <dd>0 원</dd>
+
+                        <dt>합계</dt>
+                        <dd><strong>0</strong> 원</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title">최종 결제 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>총 결제금액</dt>
+                        <dd><strong>3,000</strong> 원</dd>
+
+                        <dt>상품구매금액</dt>
+                        <dd>0 원</dd>
+
+                        <dt>배송비</dt>
+                        <dd>3,000 원</dd>
+
+                        <dt>결제예정금액</dt>
+                        <dd>0 원</dd>
+                    </dl>
+                </li>
+
+                <li class="list">
+                    <p class="title">환불 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>대상</dt>
+                        <dd>레이스 리본 탈착 민소매 니트(화이트), 화이트/S, 1</dd>
+
+                        <dt>환불일자 (처리상태)</dt>
+                        <dd>
+                            <span>2025-02-26 12:29:58</span>
+                            <strong>(환불완료)</strong>
+                        </dd>
+
+                        <dt>환불금액</dt>
+                        <dd><strong>338,000</strong> 원</dd>
+
+                        <dt>환불수단</dt>
+                        <dd>현금</dd>
+
+                        <dt>환불계좌</dt>
+                        <dd>기업은행 216-119175-01-037 </dd>
+
+                        <dt>예금주</dt>
+                        <dd>이혜진</dd>
+
+                        <dt>할인 및 부가결제 복원 내역</dt>
+                        <dd><strong>89,000</strong> 원</dd>
+                    </dl>
+                </li>
+
+                <li class="list">
+                    <p class="title">배송 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>받으시는 분</dt>
+                        <dd class="name_box">
+                            <span class="name">이혜진</span>
+                            <span class="number">010-8290-7002</span>
+                        </dd>
+
+                        <dt>주소</dt>
+                        <dd class="address_box">
+                            <p class="address">(08788) 서울특별시 관악구 남부순환로 226길 9 (봉천동) 본사 </p>
+                            <p class="number">010-8290-7002</p>
+                        </dd>
+
+                        <dt>배송메시지</dt>
+                        <dd class="message">부재시 현관문 앞에 놔주세요.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!-- //반품완료 -->
+
+        <!-- 배송준비 -->
+        <div class="heading_box">
+            <h3 class="heading">배송준비중</h3>
+        </div>
+
+        <ul class="prod_list row">
+            <!--list 컨텐츠 반복-->
+            <li class="prod_item row">
+                <div class="inner">
+                    <div class="boxs">
+                        <div class="img_box">
+                            <img src="../../assets/images/product/product03.png" alt="브이넥 풀오버 베스트">
+                        </div>
+                    </div>
+
+                    <!--pc only-->
+                    <div class="txt_box pc_show">
+                        <div class="txts">
+                            <span class="num">FF3SW02FWH</span>
+                            <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                            <p class="options">
+                                <span>사이즈 S / 수량  1</span>
+                            </p>
+                        </div>
+
+                        <div class="result">
+                            <div class="price">
+                                <p><s>358,000원</s></p>
+                                <p>
+                                    <span class="discount">50%</span>
+                                    <span>179,000</span><em>&nbsp;원</em>
+                                </p>
+                                <span class="price_text">무료배송</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//pc only-->
+
+                    <!--mo only-->
+                    <div class="txt_box mo_show">
+                        <p class="tit"><a href="#">진주 메리제인 골프화</a></p>
+                        <p class="options">
+                            <span>사이즈 S / 수량  1</span>
+                        </p>
+                        <div class="price">
+                            <p><s>358,000원</s></p>
+                            <p>
+                                <span class="discount">50%</span>
+                                <span>179,000원</span>
+                            </p>
+                            <span class="price_text">무료배송</span>
+                        </div>
+                    </div>
+                    <!--//mo only-->
+
+                    <div class="btn_wrap btns">
+                        <span class="message_text">배송준비중</span>
+                    </div>
+
+                </div>
+            </li>
+            <!--//list 컨텐츠 반복-->
+        </ul>
+
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title2">[기본배송]</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>상품구매금액</dt>
+                        <dd>0 원</dd>
+
+                        <dt>배송비</dt>
+                        <dd>0 원</dd>
+
+                        <dt>지역별배송비</dt>
+                        <dd>0 원</dd>
+
+                        <dt>합계</dt>
+                        <dd><strong>0</strong> 원</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+
+        <div class="detail_view detail_box">
+            <ul>
+                <li class="list">
+                    <p class="title">배송 정보</p>
+                    <dl class="dl_list type2 brd_none">
+                        <dt>받으시는 분</dt>
+                        <dd class="name_box">
+                            <span class="name">이혜진</span>
+                            <span class="number">010-8290-7002</span>
+                        </dd>
+
+                        <dt>주소</dt>
+                        <dd class="address_box">
+                            <p class="address">(08788) 서울특별시 관악구 남부순환로 226길 9 (봉천동) 본사 </p>
+                            <p class="number">010-8290-7002</p>
+                        </dd>
+
+                        <dt>배송메시지</dt>
+                        <dd class="message">부재시 현관문 앞에 놔주세요.</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <!-- //배송준비 -->
+
+        <div class="btn_wrap view">
+            <button type="button" class="btn_secondary"><span class="text">전체 주문내역 보기</span></button>
+        </div>
+
+        <div class="info">
+            <div class="dot_box">
+                <div class="information">
+                    <p class="title large"><span class="icon_info"></span>안내사항</p>
+
+                    <ul class="dot">
+                        <li><strong>신용카드 매출전표 발행 안내</strong>
+                            <ul class="bar">
+                                <li>신용카드 결제는 사용하는 PG사 명의로 발행됩니다.</li>
+                            </ul>
+                        </li>
+                        <li><strong>세금계산서 발행 안내</strong>
+                            <ul class="bar">
+                                <li>부가가치세법 제54조에 의거하여 세금계산서는 배송 완료일로부터 다음 달 10일까지만 요청하실 수 있습니다.</li>
+                                <li>세금계산서는 사업자만 신청하실 수 있습니다.</li>
+                                <li>배송이 완료된 주문에 한하여 세금계산서 발행 신청이 가능합니다.</li>
+                                <li><a href="#" class="link">[세금계산서 신청]</a> 버튼을 눌러 세금계산서 신청양식을 작성한 후 팩스로 사업자등록증 사본을 보내셔야 세금계산서 발생이 가능합니다.</li>
+                                <li><a href="#" class="link">[세금계산서 인쇄]</a> 버튼을 누르면 발행된 세금계산서를 인쇄하실 수 있습니다.</li>
+                                <li>세금계산서는 실 결제 금액에 대해서만 발행됩니다. (마일리지와 할인금액은 세금계산서 금액에서 제외됨)</li>
+                            </ul>
+                        </li>
+                        <li><strong>부가가치세법 변경에 따른 신용카드 매출전표 및 세금계산서 변경 안내</strong>
+                            <ul class="bar">
+                                <li>변경된 부가가치세법에 의거, 2004.7.1 이후 신용카드로 결제하신 주문에 대해서는 세금계산서 발행이 불가하며 신용카드 매출전표로 부가가치세 신고를 하셔야 합니다.(부가가치세법 시행령 57조)</li>
+                                <li>상기 부가가치세법 변경 내용에 따라 신용카드 이외의 결제건에 대해서만 세금계산서 발행이 가능함을 양지하여 주시기 바랍니다.</li>
+                            </ul>
+                        </li>
+                        <li><strong>현금영수증 이용안내</strong>
+                            <ul class="bar">
+                                <li>현금영수증은 1원 이상의 현금성 거래 (무통장입금, 실시간 계좌이체, 에스크로, 예치금)에 대해 발행이 됩니다.</li>
+                                <li>현금영수증 발행 금액에는 배송비는 포함되고, 마일리지 사용액은 포함되지 않습니다.</li>
+                                <li>발행 신청 기간 제한 현금영수증은 입금 확인 일로부터 48시간 안에 발행을 해야 합니다. </li>
+                                <li>현금영수증 발행 취소의 경우는 시간제한이 없습니다.(국세청의 정책에 따라 변경될 수 있습니다)</li>
+                                <li>현금영수증이나 세금계산서 중 하나만 발행 가능합니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../deOrderDetail/deOrderDetail.js"></script>

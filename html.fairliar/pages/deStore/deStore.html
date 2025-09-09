@@ -1,0 +1,216 @@
+<link href="../../pages/deStore/deStore.css" rel="stylesheet">
+
+<div class="deStore">
+    <div class="inner">
+        <div class="tab_wrap">
+            <div class="tab-ctrl type2 full">
+                <ul>
+                    <li><a href="#tab2-1" class="on">국내매장</a></li><!-- 탭 활성화 시 on 클래스 추가 -->
+                    <li><a href="#tab2-2">해외매장</a></li>
+                </ul>
+            </div>
+    
+            <div class="tab-contents-wrap">
+                <div id="tab2-1" class="tab-content on">
+                    <div class="board-search_warp">
+                        <div class="board-search">
+                            <div class="combobox_wrap"><!-- 필수 항목일시 .required 추가-->
+                                <div class="text_input">
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <div class="slds-combobox_container">
+                                                <!-- 오픈시 클래스 slds-is-open추가 -->
+                                                <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click">
+                                                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                                        <div role="combobox" tabindex="0" class="slds-input_faux slds-combobox__input slds-has-focus" aria-labelledby="combobox-label-id-132 combobox-id-2-selected-value" id="combobox-id-2-selected-value" aria-controls="listbox-id-4" aria-expanded="true" aria-haspopup="listbox">
+                                                            <span class="slds-truncate" id="combobox-value-id-101">지역</span>
+                                                        </div>
+                                                        <span class="slds-icon_container slds-icon-utility-down slds-input__icon slds-input__icon_right">
+                                                            <svg class="slds-icon slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                                                                <use xlink:href="../../assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <!-- 오픈 listbox -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- //.combobox_wrap -->
+
+                            <div class="box_input required"><!-- 필수 항목일시 .required 추가-->
+                                <div class="text_input">
+                                    <input type="text" placeholder="매장을 입력해주세요."><!-- readonly경우 readonly, disabled경우 disabled 속성 추가 -->
+
+                                    <span class="btn_box">
+                                        <button type="button"><span class="icon_clear"></span></button>
+                                        <button type="button"><span class="icon_search"></span></button>
+                                    </span>
+                                </div>
+                            </div><!-- //.box_input -->
+                        </div>
+                    </div><!-- //.board-search_warp -->
+                    
+                    <div class="map"><!-- iframe --></div>
+
+                    <div class="box-board">
+                        <ul class="store_wrap">
+                            <!-- list 반복 -->
+                            <li class="store_cont">
+                                <div class="store_img">
+                                    <img src="../../assets/images/store/store_01.png" alt="">
+                                </div>
+                                <div class="store_title">
+                                    <a href="#">신세계백화점 강남점
+                                        <span class="icon_map pc_show"></span>
+                                    </a>
+                                </div>
+                                <p class="store_address">서울특별시 서초구 신반포로 176 (반포동) 신세계 강남점 7층</p> 
+                                <div class="store_phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:0234796246">02-3479-6246</a>
+                                </div>  
+                            </li>
+                             <!-- //list 반복 -->
+            
+                            <li class="store_cont">
+                                <div class="store_img">
+                                    <img src="../../assets/images/store/store_02.png" alt="">
+                                </div>
+                                <div class="store_title">
+                                    <a href="#">신세계백화점 하남점 
+                                        <span class="icon_map pc_show"></span>
+                                    </a>
+                                </div>
+                                <p class="store_address">경기도 하남시 미사대로 750 (신정동) 스타월드 하남 2층</p> 
+                                <div class="store_phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:03180721247">031-8072-1247</a>
+                                </div>  
+                            </li>
+            
+                            <li class="store_cont">
+                                <div class="store_img">
+                                    <img src="../../assets/images/store/store_03.png" alt="">
+                                </div>
+                                <div class="store_title">
+                                    <a href="#">신세계백화점 대구점 
+                                        <span class="icon_map pc_show"></span>
+                                    </a>
+                                </div>
+                                <p class="store_address">대구광역시 동구 동부로 149 (신천동) 신세계동대구복합환승센터 신세계 대구 2층점</p> 
+                                <div class="store_phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:0536616254">053-661-6254</a>
+                                </div>  
+                            </li>
+            
+                            <li class="store_cont">
+                                <div class="store_img">
+                                    <img src="../../assets/images/store/store_04.png" alt="">
+                                </div>
+                                <div class="store_title">
+                                    <a href="#">신세계백화점 대전점
+                                        <span class="icon_map pc_show"></span>
+                                    </a>
+                                </div>
+                                <p class="store_address">대전광역시 유성구 엑스포로 1 (도롱동) (신세계백화점 대전점) 4층</p> 
+                                <div class="store_phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:0234796246">02-3479-6246</a>
+                                </div>  
+                            </li>
+            
+                            <li class="store_cont">
+                                <div class="store_img">
+                                    <img src="../../assets/images/store/store_05.png" alt="">
+                                </div>
+                                <div class="store_title">
+                                    <a href="#">현대백화점 중동점
+                                        <span class="icon_map pc_show"></span>
+                                    </a>
+                                </div>
+                                <p class="store_address">경기도 부천시 길주로 180 (중등) 현대백화점 중동점 6층</p> 
+                                <div class="store_phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:0326232689">032-623-2689</a>
+                                </div>  
+                            </li>
+            
+                            <li class="store_cont">
+                                <div class="store_img">
+                                    <img src="../../assets/images/store/store_01.png" alt="">
+                                </div>
+                                <div class="store_title">
+                                    <a href="#">신세계백화점 강남점
+                                        <span class="icon_map pc_show"></span>
+                                    </a>
+                                </div>
+                                <p class="store_address">서울특별시 서초구 신반포로 176 (반포동) 신세계 강남점 7층</p> 
+                                <div class="store_phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:0234796246">02-3479-6246</a>
+                                </div>  
+                            </li>
+            
+                            <li class="store_cont">
+                                <div class="store_img">
+                                    <img src="../../assets/images/store/store_02.png" alt="">
+                                </div>
+                                <div class="store_title">
+                                    <a href="#">신세계백화점 하남점 
+                                        <span class="icon_map pc_show"></span>
+                                    </a>
+                                </div>
+                                <p class="store_address">경기도 하남시 미사대로 750 (신정동) 스타월드 하남 2층</p> 
+                                <div class="store_phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:03180721247">031-8072-1247</a>
+                                </div>  
+                            </li>
+            
+                            <li class="store_cont">
+                                <div class="store_img">
+                                    <img src="../../assets/images/store/store_03.png" alt="">
+                                </div>
+                                <div class="store_title">
+                                    <a href="#">신세계백화점 대구점 
+                                        <span class="icon_map pc_show"></span>
+                                    </a>
+                                </div>
+                                <p class="store_address">대구광역시 동구 동부로 149 (신천동) 신세계동대구복합환승센터 신세계 대구 2층점</p> 
+                                <div class="store_phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:0536616254">053-661-6254</a>
+                                </div>  
+                            </li>
+                        </ul>
+            
+                        <!-- case)리스트 없음 -->
+                        <!-- <div class="nolist_wrap">
+                            <div class="content_top">
+                                <div class="icon_box"><span></span></div>
+                                <p>등록된 게시물이 없습니다.</p>
+                            </div>
+                        </div> -->
+                        <!-- //case)리스트 없음 -->
+        
+                         
+                    </div><!-- //.box-board -->
+                </div>
+
+                <div id="tab2-2" class="tab-content">
+                    tab2 컨텐츠가 들어갑니다.
+                </div>
+            </div><!-- //.tab-contents-wrap -->
+            
+        </div><!-- //.tab_wrap -->
+
+        
+
+       
+    </div>
+</div>
+
+<script src="../deStore/deStore.js"></script>
